@@ -1,156 +1,106 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A Little Field Guide to Leaves</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
+        /* Body */
         body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
             margin: 0;
-            background: #f7f5ec;
-            color: #253a2e;
-            font: 1.1rem/1.6 system-ui, sans-serif;
         }
 
+        /* Header */
         header {
-            background: #243f31;
-            color: #f7f5ec;
-            padding: clamp(2.5rem, 8vw, 6rem) 1.25rem;
+            background-color: #2C3E50;
+            padding: 20px;
         }
 
-        .wrap,
-        main,
+        /* Navigation */
+        nav {
+            background-color: #3498DB;
+            padding: 15px;
+        }
+
+        /* Main */
+        main {
+            background-color: #F4F6F7;
+            font-size: 18px;
+            padding: 30px;
+            min-height: 300px;
+        }
+
+        /* Footer */
         footer {
-            max-width: 66rem;
-            margin: auto;
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 15px;
         }
 
-        header p,
+        /* List items */
+        li {
+            display: inline-block;
+            width: 150px;
+        }
+
+        /* Heading */
         h1 {
-            margin: 0;
-        }
-
-        .label {
-            text-transform: uppercase;
-            letter-spacing: .16em;
-            font-size: .8rem;
-        }
-
-        h1,
-        h2,
-        h3 {
+            text-align: center;
             font-family: Georgia, serif;
-            line-height: 1.15;
+            color: white;
         }
 
-        h1 {
-            font-size: clamp(2.5rem, 7vw, 5rem);
-            max-width: 12ch;
-            margin: .5rem 0 1rem;
+        /* Paragraph */
+        p {
+            line-height: 1.6;
         }
 
-        main,
-        footer {
-            padding: 1.5rem 1.25rem;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-            gap: 1rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .cards li {
-            border: 1px solid #c8d1c0;
-            background: #fffdf6;
-            border-radius: .75rem;
-            overflow: hidden;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-            background: #e8eddb;
-        }
-
-        .notes {
-            padding: 1rem;
-        }
-
-        h3,
-        .notes p {
-            margin: 0;
-        }
-
-        .notes p {
-            margin-top: .5rem;
-        }
-
-        footer {
-            border-top: 1px solid #c8d1c0;
-        }
-
-        a {
-            color: #255738;
-            text-underline-offset: .2em;
+        nav a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
+
     <header>
-        <div class="wrap">
-            <p class="label">A pocket nature study</p>
-            <h1>A Little Field Guide to Leaves</h1>
-            <p>Three shapes to look for on your next walk.</p>
-        </div>
+        <h1>Welcome to My Website</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section aria-labelledby="shapes">
-            <h2 id="shapes">Start with the outline</h2>
-            <p>Look where the blade meets the stem, then trace the edge with your eyes.</p>
-            <ul class="cards" role="list">
-                <li>
-                    <img width="320" height="200" alt="An oval green leaf with a smooth edge and pointed tip"
-                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cpath fill='%234c7548' d='M69 138Q114 31 249 51Q215 169 69 138Z'/%3E%3Cpath fill='none' stroke='%23dce7bd' stroke-width='3' d='M63 143L227 62M119 115L116 89M151 99L152 73M151 99L184 107M180 85L206 90'/%3E%3C/svg%3E" />
-                    <div class="notes">
-                        <h3>Oval</h3>
-                        <p>Look for a broad middle and an outline that narrows toward both ends.</p>
-                    </div>
-                </li>
-                <li>
-                    <img width="320" height="200" alt="A heart-shaped leaf with a notch where the stem meets the blade"
-                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cpath fill='%23577c4e' d='M160 128C140 163 77 153 83 106C87 71 134 57 160 30C186 57 233 71 237 106C243 153 180 163 160 128Z'/%3E%3Cpath fill='none' stroke='%23e3ebc5' stroke-width='3' d='M160 176V46M160 94L117 111M160 94L203 111M160 72L135 84M160 72L185 84'/%3E%3C/svg%3E" />
-                    <div class="notes">
-                        <h3>Heart-shaped</h3>
-                        <p>Find the notch at the base and the pointed tip at the opposite end.</p>
-                    </div>
-                </li>
-                <li>
-                    <img width="320" height="200" alt="A green leaf with five lobes radiating from its base"
-                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cpath fill='%23617f43' d='M160 153Q117 167 71 123L115 119L85 62L138 87L160 24L182 87L235 62L205 119L249 123Q203 167 160 153Z'/%3E%3Cpath fill='none' stroke='%23e7ecc4' stroke-width='3' d='M160 179V43M160 150L102 77M160 150L218 77M160 150L95 127M160 150L225 127'/%3E%3C/svg%3E" />
-                    <div class="notes">
-                        <h3>Palmately lobed</h3>
-                        <p>Look for lobes spreading from a common point like fingers from a palm.</p>
-                    </div>
-                </li>
-            </ul>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my website. This is my CSS assignment.</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This page demonstrates HTML and CSS styling.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Thank you for visiting my website.</p>
         </section>
     </main>
 
     <footer>
-        <p>Explore more plants at the <a href="https://www.kew.org/">Royal Botanic Gardens, Kew</a>.</p>
+        <p>Copyright 2026 - My Website</p>
     </footer>
-</body>
 
+</body>
 </html>
